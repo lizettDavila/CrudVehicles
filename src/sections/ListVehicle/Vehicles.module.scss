@@ -1,0 +1,41 @@
+.Vehicles{
+    background-image: linear-gradient(to top, #f48fb1, #f7a5c0, #f9bacf, #fbcfde, #fce4ec);
+    width: 100%;
+    height: auto;
+
+    .Text {
+        margin: 30px 30px 10px;
+        color: #7e57c2;
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        font-size: 1rem;
+    }
+    .Select{
+        margin: 0 0 30px 30px;
+        min-width: 300px;
+       :global {
+           .ant-select-selector {
+               border-radius: 10px;
+               height: 35px;
+           }
+       }
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.6rem;
+        color: #37474f;
+        font-family: 'Lato', sans-serif;
+    }
+}
+@media (max-width: 768px) {
+    .Vehicles{
+        .Text{
+            margin: 30px 20px 10px;
+        }
+        .Select{
+            min-width: none;
+            margin: 0 10px;
+        }
+    }
+}

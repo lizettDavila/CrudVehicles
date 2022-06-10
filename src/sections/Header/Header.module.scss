@@ -1,0 +1,93 @@
+.Header {
+    padding-top: 20px;
+    background-image: linear-gradient(to bottom, #f48fb1, #f7a5c0, #f9bacf, #fbcfde, #fce4ec);
+
+    .SubHeader {
+        max-height: 120px;
+        .Item {
+            width: 30%;
+            overflow: visible;
+            stroke: #fff;
+            stroke-width: 2;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+        }
+
+        .Button {
+            display: flex;
+            justify-content: right;
+            padding-top: 1%;
+        }
+
+        :global {
+            .ant-btn {
+                background-color: transparent;
+                color: white;
+                font-size: 15px;
+                font-weight: 700;
+                border-radius: 10px;
+                border-color: white;
+                max-height: auto;
+            }
+
+            .ant-btn:hover {
+                background-color: transparent;
+                color: #673ab7;
+                ;
+                border-color: #673ab7;
+                transition: ease-in 0.55s;
+            }
+            .ant-col:first-child {
+                padding-left: 30px;
+            }
+
+            .ant-col:nth-child(2) {
+                padding-right: 30px;
+            }
+        }
+    }
+
+    .Text {
+        text-align: center;
+        padding: 10px;
+        font-family: 'Lato', sans-serif;
+        
+        p {
+            margin: 0 auto;
+            font-size: 1.8rem;
+            max-width: 450px;
+            color: #37474f;
+            font-weight: 700;
+        }
+        .ButtonTwo{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: auto;
+            background-image: linear-gradient(to left, #81d4fa, #62b9f6, #599ced, #687cdd, #7e57c2);
+            border-radius: 10px;
+            border: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            min-width: 300px;
+            min-height: 60px;
+            a {
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+                min-width: 300px;
+                min-height: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .Header {
+        .SubHeader {
+            .Item {
+                width: 90%;
+            }
+        }
+    }
+}

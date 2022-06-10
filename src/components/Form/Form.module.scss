@@ -1,0 +1,78 @@
+.WrappForm {
+    background-color: #eceff1;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+
+    .Form {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        h3{
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            color: #616161;
+        }
+        & > div {
+            padding: 5px;
+            p{
+                margin: 0 0 2px;
+                color: #9e9e9e;
+            }
+        }
+    }
+    .Actions{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    :global {
+        .ant-btn{
+            min-width: 200px;
+            height: auto;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 5px;
+            
+            &:first-child{
+               color: #42a5f5;
+               border-color: #42a5f5;
+               &:hover:not(:disabled){
+                   color: white;
+                   border: none;
+                   background-color: #42a5f5;
+                   transition: ease .55s;
+               }
+               &:disabled{
+                cursor: not-allowed;
+                color: gray;
+                border-color: gray;
+               }
+            }
+            &:nth-child(2){
+               color: #9e9e9e;
+               border-color: #9e9e9e;
+               &:hover{
+                color: white;
+                border: none;
+                background-color: #9e9e9e;
+                transition: ease .55s;
+            }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .WrappForm {
+        :global {
+            .ant-btn {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
