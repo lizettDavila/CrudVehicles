@@ -1,11 +1,13 @@
 .Card {
     padding: 20px;
     height: auto;
+  
 
     .BackOfCard {
         padding: 20px;
         background-color: white;
         border-radius: 10px;
+
         p {
             margin: 0; 
             margin-bottom: 15px;
@@ -16,6 +18,15 @@
             justify-content: space-between;
             margin-top: 30px;
         }
+        .HideElements {
+            display: none;
+        }
+        &:hover{
+            .HideElements {
+                display: block;
+            }
+        }
+
     }
     .BackButton{
             background-color: #ff5252;

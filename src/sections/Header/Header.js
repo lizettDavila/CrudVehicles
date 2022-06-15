@@ -44,11 +44,11 @@ function Header() {
             />
           </motion.svg>
         </Col>
-        <Col xs={12} xxl={8} className={styles.Button}>
+        {/* <Col xs={12} xxl={8} className={styles.Button}>
           <Button type="default" onClick={() => navigate("/add-vehicle")}>
             Add a vehicle
           </Button>
-        </Col>
+        </Col> */}
       </Row>
       <Row justify="center" className={styles.Text}>
         <Col span={24}>

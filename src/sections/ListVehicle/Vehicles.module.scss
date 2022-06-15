@@ -19,6 +19,42 @@
                height: 35px;
            }
        }
+    
+    }
+    .Button {
+        display: flex;
+        justify-content: right;
+        padding-top: 1%;
+        margin-top: 50px;
+        padding-right: 10px;
+
+        :global {
+            .ant-btn {
+                background-color: transparent;
+                color: black;
+                font-size: 15px;
+                font-weight: 700;
+                border-radius: 10px;
+                border-color: black;
+                max-height: auto;
+            }
+
+            .ant-btn:hover {
+                background-color: transparent;
+                color: #673ab7;
+                ;
+                border-color: #673ab7;
+                transition: ease-in 0.55s;
+            }
+            .ant-col:first-child {
+                padding-left: 30px;
+            }
+
+            .ant-col:nth-child(2) {
+                padding-right: 30px;
+            }
+        }
+
     }
 
     h3 {

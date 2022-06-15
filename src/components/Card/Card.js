@@ -12,7 +12,7 @@ import styles from "./Card.module.scss";
 
 function Card({ vehicle, getVehicles, driverId }) {
   const navigate = useNavigate();
-  const { plate, model, type, capacity, id } = vehicle;
+  const { plate, model, type, capacity, id, creation_date, city } = vehicle;
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -60,6 +60,16 @@ function Card({ vehicle, getVehicles, driverId }) {
             {" "}
             <strong>Capacity:</strong> {capacity}
           </p>
+          <div className={styles.HideElements}>
+          <p>
+            {" "}
+            <strong>Date:</strong> {creation_date}
+          </p>
+          <p>
+            {" "}
+            <strong>City:</strong> {city}
+          </p>
+          </div>
           <div className={styles.Actions}>
             <Button icon={<DeleteOutlined />} onClick={() => handleDelete()}>
               Delete
